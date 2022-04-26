@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+	<name>Module CG Resa Liste</name>
+	<author>ConseilGouz</author>
+	<creationDate>September 2021</creationDate>
+	<copyright>Copyright (C) 2020 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>2.1.0</version>
+	<description>MOD_CG_RESA_LIST_XML_DESCRIPTION</description>
+	<namespace path="src">ConseilGouz\Module\CGResaList</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename module="mod_cg_resa_list">mod_cg_resa_list.php</filename>
+		<filename>layout.xml</filename>
+		<filename>index.html</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<media destination="mod_cg_resa_list" folder="media">
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages>
+		<language tag="fr-FR">language/fr-FR/mod_cg_resa_list.ini</language>
+		<language tag="fr-FR">language/fr-FR/mod_cg_resa_list.sys.ini</language>
+		<language tag="en-GB">language/en-GB/mod_cg_resa_list.ini</language>
+		<language tag="en-GB">language/en-GB/mod_cg_resa_list.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="css" type="textarea" label="MOD_CG_RESA_LIST_CSS" description="MOD_CG_RESA_LIST_CSS_DESC" cols="400" rows="4" filter="raw" 
+					default=""
+					/>	
+			</fieldset>
+			<fieldset name="layout">
+				<field type="note" name="note1" description="MOD_CG_RESA_LIST_NOTE1" class="alert-success"/>		 
+				<field name="layouts" label="" type="subform" multiple ="true" 
+					formsource="/modules/mod_cg_resa_list/layout.xml" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				/>
+			</fieldset>
+		</fields>
+		
+	</config>
+	<changelogurl>https://www.conseilgouz.com/updates/mod_cg_resa_list_changelog.xml</changelogurl>
+	<updateservers>
+	<server type="extension" name="Module CG Resa Liste" priority="1">https://www.conseilgouz.com/updates/mod_cg_resa_list_update.xml</server>
+	</updateservers>
+	
+</extension>

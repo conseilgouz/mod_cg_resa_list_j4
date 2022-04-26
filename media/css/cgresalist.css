@@ -1,0 +1,16 @@
+/**
+ * @package CG Resa List Module
+ * @version 2.1.0
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2021 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+ */
+.cg_resa_list_line {
+	border-bottom: solid white 3.0pt;	
+	min-height:3em;
+}
+.cg_resa_list_col {
+	padding-left : 10px !important;
+	padding-top:0.5em !important;
+	border-right: solid white 3.0pt;
+}

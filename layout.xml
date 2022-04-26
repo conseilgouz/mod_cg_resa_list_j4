@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+     <fieldset name="section">
+		<field name="div" type="list" label="CG_RESA_LIST_FIELD" description="CG_RESA_LIST_FIELD_DESC" required="true">
+			<option value="">CG_RESA_LIST_FIELD_SELECT</option>
+			<option value="lib">CG_RESA_LIST_FIELD_LIB</option>
+			<option value="date">CG_RESA_LIST_FIELD_DATE</option>
+			<option value="comment">CG_RESA_LIST_FIELD_COMMENT</option>
+		</field>
+  		<field name="div_width" type="number" value="" min="1" max="12"  label="CG_RESA_LIST_FIELD_WIDTH" description="CG_RESA_LIST_FIELD_WIDTH_DESC" length="2" maxlength="2"  required="true"/>
+		<field name="div_align" type="list" default=""  label="CG_RESA_LIST_FIELD_ALIGN" description="CG_RESA_LIST_FIELD_ALIGN_DESC">
+			<option value="">CG_RESA_LIST_FIELD_NONE</option>
+			<option value="fg-row fg-start">CG_RESA_LIST_FIELD_LEFT</option>
+			<option value="fg-row fg-center">CG_RESA_LIST_FIELD_CENTER</option>
+			<option value="fg-row fg-end">CG_RESA_LIST_FIELD_RIGHT</option>
+		</field>
+		<field name="color" type="radio" class="btn-group btn-group-yesno" default="false"
+			label="CG_RESA_LIST_FIELD_COLOR" description="CG_RESA_LIST_FIELD_COLOR_DESC" >
+			<option value="true">JYES</option> 
+			<option value="false">JNO</option> 
+		</field>
+		<field name="islink" type="radio" class="btn-group btn-group-yesno" default="false"
+			label="CG_RESA_LIST_FIELD_ISLINK" description="CG_RESA_LIST_FIELD_ISLINK_DESC" >
+			<option value="true">JYES</option> 
+			<option value="false">JNO</option> 
+		</field>
+		
+	</fieldset>
+</form>

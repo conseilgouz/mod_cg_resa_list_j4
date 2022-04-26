@@ -1,0 +1,34 @@
+/**
+ * @package CG Resa List Module
+ * @version 2.1.0
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2021 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+ * 
+ *
+ *						>>>	CSS for Admin display module  <<<
+ */
+#attrib-layout .control-label {
+	width: 20px;
+}
+#attrib-layout .controls {
+	margin-left: 10px;
+}
+#attrib-layout  .subform-layout .control-label {
+	width: 160px;
+}
+#attrib-layout  .subform-layout .controls {
+	margin-left: 160px;
+}
+#attrib-layout .subform-layout .control-group:nth-of-type(2){
+	float:left;width:50%;
+}
+#attrib-layout .subform-layout .control-group:nth-of-type(3){
+	float:right;width:50%;
+}
+#attrib-layout .subform-layout .control-group:nth-of-type(4){
+	float:left;width:50%;
+}
+#attrib-layout .subform-layout .control-group:nth-of-type(5){
+	float:right;width:50%;
+}
